@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Cliente.ClienteEdit"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/txtTituloEditCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Editar Cliente"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#5E7FF7"/>
+
+        <LinearLayout
+            android:id="@+id/formularioEditCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/txtTituloEditCliente"
+            >
+            <TextView
+                android:id="@+id/txtCorreoEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo:"
+                />
+
+            <EditText
+                android:id="@+id/etCorreoEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCorreoEditCliente"
+                android:minWidth="48dp"
+                android:minHeight="48dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtPasswordEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contraseña"
+                />
+
+            <EditText
+                android:id="@+id/etPasswordEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtPasswordEditCliente">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtUbicacionEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion:"
+                />
+
+            <EditText
+                android:id="@+id/etUbicacionEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtUbicacionEditCliente">
+            </EditText>
+
+
+            <Button
+                android:id="@+id/btnRegistrarEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="EDITAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/formularioEditCliente"/>
+            <Button
+                android:id="@+id/btnEliminarEditCliente"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="ELIMINAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/btnRegistrarEditCliente"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

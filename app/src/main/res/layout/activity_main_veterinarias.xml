@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Veterinarias.MainVeterinarias">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtMainVeterinarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="#ffffff"
+            android:text="Menu Veterinarias"
+            android:textAlignment="center"
+            android:background="#536dfe"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btnMainVeterinariasAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:layout_below="@+id/txtMainVeterinarias"/>
+
+        <SearchView
+            android:id="@+id/buscarMainVeterinarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMainVeterinariasAdd"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaVeterinarias"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buscarMainVeterinarias"
+            tools:listitem="@layout/lista_items_veterinarias">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Cliente.MainCliente">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/txtMainCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35dp"
+            android:textColor="#ffffff"
+            android:text="Menu Clientes"
+            android:textAlignment="center"
+            android:background="#536dfe"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/btnMainClienteAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Añadir"
+            android:layout_below="@+id/txtMainCliente">
+
+        </Button>
+        <SearchView
+            android:id="@+id/buscarMainCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnMainClienteAdd"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaClientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/buscarMainCliente">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Cliente.ClienteAdd"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Registro de Clientes"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#5E7FF7"/>
+
+        <LinearLayout
+            android:id="@+id/formulario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/txtTitulo"
+            >
+            <TextView
+                android:id="@+id/txtCorreo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el Correo:"
+                />
+
+            <EditText
+                android:id="@+id/etCorreoClienteADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCorreo"
+                android:minWidth="48dp"
+                android:minHeight="48dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la Contraseña"
+                />
+
+            <EditText
+                android:id="@+id/etPasswordClienteADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtPassword">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtUbicacion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la Ubicacion:"
+                />
+
+            <EditText
+                android:id="@+id/etUbicacionClienteADD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtUbicacion">
+            </EditText>
+
+
+
+            <Button
+                android:id="@+id/btnRegistrarClienteADD"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="REGISTRAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/formulario"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

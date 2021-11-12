@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Albergues.AlbergueEdit"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/txtTituloEditAlber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Editar Albergue"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#5E7FF7"/>
+
+        <LinearLayout
+            android:id="@+id/formularioEditAlber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/txtTituloEditAlber"
+            >
+            <TextView
+                android:id="@+id/txtNombreEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nombre:"
+                />
+
+            <EditText
+                android:id="@+id/etNombreEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNombreEditAlber"
+                android:minWidth="48dp"
+                android:minHeight="48dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtDistritoEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Distrito"
+                />
+
+            <EditText
+                android:id="@+id/etDistritoEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtDistritoEditAlber">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtUbicacionEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ubicacion:"
+                />
+
+            <EditText
+                android:id="@+id/etUbicacionEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtUbicacionEditAlber">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtCorreoEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Correo :"
+                />
+
+            <EditText
+                android:id="@+id/etCorreoEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtCorreoEditAlber">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnRegistrarEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="EDITAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/formularioEditAlber"/>
+            <Button
+                android:id="@+id/btnEliminarEditAlber"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="ELIMINAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/btnRegistrarEditAlber"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>

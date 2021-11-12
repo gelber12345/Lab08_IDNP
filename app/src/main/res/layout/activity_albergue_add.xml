@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activitys.Albergues.AlbergueAdd"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+
+        >
+
+        <TextView
+            android:id="@+id/txtTituloAlbergueAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:text="Registro de Albergues"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:textColor="#fff"
+            android:background="#5E7FF7"/>
+
+        <LinearLayout
+            android:id="@+id/formularioAlbergueAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingTop="50dp"
+            android:layout_below="@+id/txtTituloAlbergueAdd"
+            >
+            <TextView
+                android:id="@+id/txtNombreAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el Nombre:"
+                />
+
+            <EditText
+                android:id="@+id/etNombreAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNombre"
+                android:minWidth="48dp"
+                android:minHeight="48dp"/>
+
+            <TextView
+                android:id="@+id/txtDistritoAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el Distrito"
+                />
+
+            <EditText
+                android:id="@+id/etDistritoAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtDistritoAlbergueAdd">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtUbicacionAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese la Ubicacion:"
+                />
+
+            <EditText
+                android:id="@+id/etUbicacionAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtUbicacionAlbergueAdd">
+            </EditText>
+
+            <TextView
+                android:id="@+id/txtCorreoAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ingrese el correo :"
+                />
+
+            <EditText
+                android:id="@+id/etCorreoAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:layout_below="@+id/txtCorreoAlbergueAdd">
+            </EditText>
+
+            <Button
+                android:id="@+id/btnRegistrarAlbergueAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:text="REGISTRAR"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/formularioAlbergueAdd"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
