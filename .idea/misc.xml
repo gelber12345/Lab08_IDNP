@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/drawable/icono.xml" value="0.17222222222222222" />
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_albergue_add.xml" value="0.15416666666666667" />
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_albergue_edit.xml" value="0.15416666666666667" />
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_cliente_add.xml" value="0.15416666666666667" />
@@ -13,7 +14,7 @@
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_main_veterinarias.xml" value="0.25" />
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_veterinarias_add.xml" value="0.20416666666666666" />
         <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/activity_veterinarias_edit.xml" value="0.20416666666666666" />
-        <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/lista_items_veterinarias.xml" value="0.20416666666666666" />
+        <entry key="..\:/Cuarto/B/IDNP/Lab/Lab08/app/src/main/res/layout/lista_items_veterinarias.xml" value="0.25" />
       </map>
     </option>
   </component>
